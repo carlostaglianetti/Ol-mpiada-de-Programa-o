@@ -1,46 +1,97 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Título do Seu Site</title>
-    <!-- Link para o arquivo CSS externo -->
+
+    <title>🌊 Limpe o Oceano</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- Cabeçalho do Site -->
-    <header>
-        <h1>Meu Site</h1>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
 
-    <!-- Conteúdo Principal -->
-    <main>
-        <section id="inicio">
-            <h2>Bem-vindo ao nosso site!</h2>
-            <p>Este é o cabeçalho e a estrutura básica de uma página em HTML5.</p>
-        </section>
+    <h1>🌊 Limpe o Oceano!</h1>
 
-        <section id="sobre">
-            <h2>Sobre Nós</h2>
-            <p>Escreva aqui um pouco sobre você ou seu projeto.</p>
-        </section>
-    </main>
+    <p>
+        Ajude a retirar o lixo do mar e proteja os animais!
+    </p>
 
-    <!-- Rodapé do Site -->
-    <footer>
-        <p>&copy; 2026 Meu Site - Todos os direitos reservados.</p>
-    </footer>
+</header>
 
-    <!-- Link para o arquivo JavaScript (opcional) -->
-    <script src="script.js"></script>
+
+<main>
+
+    <div class="painel">
+
+        <div class="pontuacao">
+
+            <div>
+                ♻️ Pontos:
+                <span id="pontos">0</span>
+            </div>
+
+            <div>
+                ⏱️ Tempo:
+                <span id="tempo">30</span>
+            </div>
+
+            <div>
+                🗑️ Lixos:
+                <span id="quantidade">12</span>
+            </div>
+
+        </div>
+
+
+        <div id="oceano">
+
+            <div class="onda"></div>
+
+            <div class="peixe peixe1">
+                🐟
+            </div>
+
+            <div class="peixe peixe2">
+                🐠
+            </div>
+
+            <div class="peixe tartaruga">
+                🐢
+            </div>
+
+            <div class="areia"></div>
+
+        </div>
+
+
+        <div id="mensagem">
+            Clique em "Começar" para jogar!
+        </div>
+
+
+        <button id="botaoComecar">
+            ▶️ Começar / Reiniciar
+        </button>
+
+    </div>
+
+</main>
+
+
+<footer>
+
+    <p>
+        🌱 Cada atitude conta para proteger nossos rios e oceanos.
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
 </body>
 </html>
