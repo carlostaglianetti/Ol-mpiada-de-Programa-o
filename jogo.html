@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Missão Oceano Limpo</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- MENU -->
+
+    <header class="menu">
+
+        <div class="logo">
+            🌊 LUMA
+        </div>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="historia.html">História</a>
+            <a href="jogo.html">Jogar</a>
+        </nav>
+
+    </header>
+
+
+    <!-- JOGO -->
+
+    <main class="game-page">
+
+        <div class="game-header">
+
+            <span class="chapter">
+                MISSÃO 01
+            </span>
+
+            <h1>
+                Limpe o oceano!
+            </h1>
+
+            <p>
+                Luma precisa da sua ajuda.
+                Clique em todo o lixo que encontrar.
+            </p>
+
+            <div class="score">
+
+                🗑️ Lixo retirado:
+
+                <strong id="contador">0</strong>
+
+                / 8
+
+            </div>
+
+        </div>
+
+
+        <!-- ÁREA DO OCEANO -->
+
+        <section class="ocean-game" id="oceano">
+
+            <!-- LIXOS -->
+
+            <button
+                class="trash trash1"
+                onclick="removerLixo(this)">
+                🥤
+            </button>
+
+            <button
+                class="trash trash2"
+                onclick="removerLixo(this)">
+                🛍️
+            </button>
+
+            <button
+                class="trash trash3"
+                onclick="removerLixo(this)">
+                🧴
+            </button>
+
+            <button
+                class="trash trash4"
+                onclick="removerLixo(this)">
+                🥫
+            </button>
+
+            <button
+                class="trash trash5"
+                onclick="removerLixo(this)">
+                🧃
+            </button>
+
+            <button
+                class="trash trash6"
+                onclick="removerLixo(this)">
+                🧦
+            </button>
+
+            <button
+                class="trash trash7"
+                onclick="removerLixo(this)">
+                🥡
+            </button>
+
+            <button
+                class="trash trash8"
+                onclick="removerLixo(this)">
+                🧴
+            </button>
+
+
+            <!-- ANIMAIS -->
+
+            <div class="fish fish1">
+                🐟
+            </div>
+
+            <div class="fish fish2">
+                🐠
+            </div>
+
+            <div class="fish fish3">
+                🐡
+            </div>
+
+
+            <!-- TARTARUGA -->
+
+            <div class="turtle-game">
+                🐢
+            </div>
+
+
+            <!-- MENSAGEM -->
+
+            <div
+                id="mensagem"
+                class="game-message">
+
+                Clique nos objetos para limpar o oceano!
+
+            </div>
+
+        </section>
+
+
+        <!-- BOTÃO FINAL -->
+
+        <a
+            href="final.html"
+            id="finalButton"
+            class="btn principal game-button">
+
+           <a href="final.html"> 🌊 CONTINUAR
+
+        </a>
+
+    </main>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        let lixoRetirado = 0;
+
+        const totalLixo = 8;
+
+
+        function removerLixo(elemento) {
+
+            /*
+             * Se o lixo já foi clicado,
+             * não faz nada.
+             */
+
+            if (elemento.classList.contains("removido")) {
+                return;
+            }
+
+
+            /*
+             * Marca o lixo como removido.
+             */
+
+            elemento.classList.add("removido");
+
+
+            /*
+             * Troca o emoji por uma estrela.
+             */
+
+            elemento.innerHTML = "✨";
+
+
+            /*
+             * Atualiza a quantidade.
+             */
+
+            lixoRetirado++;
+
+
+            document.getElementById("contador").textContent =
+                lixoRetirado;
+
+
+            /*
+             * Atualiza mensagem.
+             */
+
+            document.getElementById("mensagem").textContent =
+                "Muito bem! Você encontrou um lixo!";
+
+
+            /*
+             * Verifica se terminou.
+             */
+
+            if (lixoRetirado >= totalLixo) {
+
+                document.getElementById("mensagem").textContent =
+                    "🎉 PARABÉNS! Você limpou todo o oceano!";
+
+
+                document
+                    .getElementById("finalButton")
+                    .classList.add("ativo");
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>

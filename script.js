@@ -66,7 +66,7 @@ function iniciarJogo() {
 
     pontos = 0;
 
-    tempo = 30;
+    tempo = 10;
 
     quantidadeLixo = tiposLixo.length;
 
@@ -79,7 +79,7 @@ function iniciarJogo() {
 
 
     mensagem.innerHTML =
-        "🧹 Retire todo o lixo antes que o tempo acabe!";
+        " Retire todo o lixo antes que o tempo acabe!";
 
 
     criarLixos();
@@ -246,7 +246,7 @@ function finalizarJogo(vitoria) {
 
             "🎉 <strong>Parabéns!</strong><br><br>" +
 
-            "Você retirou todo o lixo do oceano! 🌊🐢<br><br>" +
+            "Você retirou todo o lixo do oceano! <br><br>" +
 
             "Bônus de tempo: +" +
             bonus +
