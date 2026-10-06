@@ -36,7 +36,7 @@
 }
 
 .menu nav a {
-    color: #c5e7ed;
+    color: #fdfdfd;
 
     text-decoration: none;
 
@@ -46,7 +46,7 @@
 }
 
 .menu nav a:hover {
-    color: #52e5dc;
+    color: #ffffff;
 }
 
 
@@ -73,15 +73,15 @@
 }
 
 .btn.principal {
-    background: #56e3d6;
+    background: #ffffff;
 
     color: #03232e;
 }
 
 .btn.secundario {
-    border: 1px solid #52e5dc;
+    border: 1px solid #ffffff;
 
-    color: #52e5dc;
+    color: #ffffff;
 
     background: transparent;
 }

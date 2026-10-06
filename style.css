@@ -43,8 +43,8 @@ body {
 
     background:
         linear-gradient(
-            rgba(0, 80, 120, 0.85),
-            rgba(0, 40, 80, 0.9)
+            rgba(255, 255, 255, 0.85),
+            rgba(255, 255, 255, 0.9)
         );
 
     border-bottom:
