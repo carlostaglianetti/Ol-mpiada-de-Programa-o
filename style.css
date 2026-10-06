@@ -509,20 +509,3 @@ footer {
     }
 
 }
-body {
-    background-color: #e0f7fa; /* Fundo azul claro */
-    overflow: hidden;          /* Esconde a barra de rolagem */
-}
-
-.peixe {
-    position: absolute;
-    top: 40%;                 /* Altura do peixe na tela */
-    font-size: 50px;          /* Tamanho do peixinho */
-    animation: nadar 8s linear infinite;
-}
-
-/* Animação que faz o peixe andar */
-@keyframes nadar {
-    0%   { left: -60px; }     /* Começa fora da tela (esquerda) */
-    100% { left: 100%; }      /* Termina fora da tela (direita) */
-}
